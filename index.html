@@ -1,67 +1,167 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <title>Temurbek | Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-            padding: 40px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #007bff;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        .project {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temurbek Raxmonberganov | Portfolio</title>
+  <style>
+    /* Umumiy sozlamalar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #2980b9;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ecf0f1;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .skill-tag {
+      background: #e0f7fa;
+      color: #00796b;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .projects {
+      list-style: none;
+      padding: 0;
+    }
+    .project-item {
+      background: #f8f9fa;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #3498db;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #7f8c8d;
+      font-size: 0.95rem;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobilga moslik */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Salom, men Temurbek!</h1>
-            <p>Dasturchi sifatida ishlayman. Loyihalarimni GitHubda joylayman.</p>
-        </header>
+  <div class="container">
+    <header>
+      <h1>Temurbek Raxmonberganov</h1>
+      <p class="subtitle">Dasturchi | Full-Stack Ishlab Chiquvchi</p>
+    </header>
 
-        <div class="project">
-            <h2>📝 Loyiha 1: Kalkulyator</h2>
-            <p>JavaScript asosida yaratilgan oddiy kalkulyator.</p>
-            <a href="https://github.com/temurbek0850/calculator">GitHubga o'tish</a>
-        </div>
+    <section>
+      <h2>Haqimda</h2>
+      <p>
+        Men dasturchiman va turli texnologiyalar — veb, backend, hamda algoritmik dasturlash sohalarida ishlayman.
+        ICP algoritmi bo'yicha mutaxassism, shuningdek, zamonaviy veb-ilovalarni yaratishda ko'p tajribaga egaman.
+      </p>
+    </section>
 
-        <div class="project">
-            <h2>🎨 Loyiha 2: Shaxsiy sayt</h2>
-            <p>Bu sayt ham GitHub Pages orqali ishlaydi!</p>
-            <a href="https://temurbek0850.github.io">Live Demo</a>
-        </div>
+    <section>
+      <h2>Biladigan dasturlash tillari va texnologiyalar</h2>
+      <div class="skills">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">jQuery</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Django</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">ICP Algorithm</span>
+      </div>
+    </section>
 
-        <footer style="text-align: center; margin-top: 40px;">
-            <p>📧 Email: temurbek@example.com | 💼 LinkedIn: /temurbek</p>
-        </footer>
-    </div>
+    <section>
+      <h2>Loyihalar</h2>
+      <ul class="projects">
+        <li class="project-item">
+          <strong>3D Point Cloud Registration</strong> – C++ asosida ICP algoritmi yordamida nuqtali bulutlarni moslashtirish.
+        </li>
+        <li class="project-item">
+          <strong>E-commerce Platform</strong> – React + Django orqali yaratilgan to'liq veb-do'kon.
+        </li>
+        <li class="project-item">
+          <strong>API Backend</strong> – FastAPI yordamida tezkor va xavfsiz REST API.
+        </li>
+        <li class="project-item">
+          <strong>Portfolio Sayt</strong> – Siz hozir ko'ryotgan shu sahifa! 😊
+        </li>
+      </ul>
+      <p><a href="https://github.com/temurbek0850" target="_blank">Barcha loyihalarimni GitHubda ko'rish</a></p>
+    </section>
+
+    <footer>
+      <p>📧 Email: temurbek.raxmonberganov@example.com</p>
+      <p>🔗 <a href="https://github.com/temurbek0850" target="_blank">GitHub</a> | <a href="#" target="_blank">LinkedIn</a></p>
+      <p>© 2025 Temurbek Raxmonberganov. Barcha huquqlar himoyalangan.</p>
+    </footer>
+  </div>
 </body>
 </html>
